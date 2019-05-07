@@ -55,3 +55,9 @@ Save this (click update) and this the creates a file in the
 	
 which searches for these fields and applys the screen update. 
 
+FYI
+
+We use the amazing Signature pad code (also open source)
+
+https://github.com/szimek/signature_pad
+
