@@ -1,7 +1,7 @@
 # CRMSignature
 Add in the ability to make a multiline text field a signature field
 
-The code in the 
+The code is in the 
 
 	src
 
@@ -11,7 +11,7 @@ We ship the component with it "CRMSignature.zip".
 -To create your own Sage CRM component zip up the contents of the src folder. 
 
 To install then import via Sage CRM's Component Manager. 
-This creates a folders in your CustomPages folder called
+This creates a folder in your CustomPages folder called
 
 	CRMSignature
 
@@ -42,11 +42,12 @@ The in the editor set the array code to contain our field(s)
 
 EG 
 Single Field
-	["case_c_signature","case_c_signature2"]
+	["case_c_signature"]
 	  
 EG
 Multiple fields
-	["case_c_signature"]
+	["case_c_signature","case_c_signature2"]
+	
 
 Save this (click update) and this the creates a file in the 
 
