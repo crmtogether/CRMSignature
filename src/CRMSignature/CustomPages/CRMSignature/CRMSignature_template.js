@@ -15,6 +15,10 @@ function clearSignature(index) {
 	_signaturePad.clear();
 }
 
+var _canvas_width=300;
+var _canvas_height=150;
+var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+
 $(document).ready(function () {	
 
 	
@@ -29,8 +33,6 @@ $(document).ready(function () {
 	}
 
 	if (signatureFields.length > 0) {		
-		
-			
 		
 		//load signature pad js library
 		$.cachedScript("../CustomPages/CRMSignature/js/signature_pad.min.js").done(function (script, textStatus) {
@@ -48,6 +50,9 @@ $(document).ready(function () {
 				wrapper.className = "signature-pad";
 				var canvas = document.createElement("canvas");
 				wrapper.appendChild(canvas);
+				canvas.width = _canvas_width;
+				canvas.height = _canvas_height;
+				canvas.getContext("2d").scale(ratio, ratio);
 								
 				if (editorReadOnly) { //---------------------------IN VIEW MODE SHOW SIGNATURE  
 				
